@@ -15,5 +15,5 @@ int main()
     return 0;
 }
 void DecToBin (int num ){
-    iff 
+    // iff else 
 }
