@@ -1,30 +1,32 @@
 #include <stdio.h>
-#include<stdlib.h>
-void decimalToBinary(int num) {   
-    if (num == 0) {
-        printf("0");
-        return;
-    }
-   
-   // Stores binary representation of number.
+#include <stdlib.h>
+void decimalToBinary(int num)
+{
+   if (num == 0)
+   {
+      printf("0");
+      return;
+   }
+
    int binaryNum[32]; // Assuming 32 bit integer.
-   int i=0;
-   
-   for ( ;num > 0; ){
+   int i = 0;
+
+   for (; num > 0;)
+   {
       binaryNum[i++] = num % 2;
       num /= 2;
    }
-   
-   // Printing array in reverse order.
-   for (int j = i-1; j >= 0; j--)
+
+   for (int j = i - 1; j >= 0; j--)
       printf("%d", binaryNum[j]);
 }
 
-int main() {
+int main()
+{
 
-   int num ;
+   int num;
    printf("enter the number \n");
-   scanf("%d",&num);
+   scanf("%d", &num);
    decimalToBinary(num);
    return 0;
 }
