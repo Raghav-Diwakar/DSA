@@ -64,7 +64,7 @@ int main()
     enqueue(&myq,'I');
     enqueue(&myq,'G');
     enqueue(&myq,'H');
-    enqueue(&myq,'j');
+    // enqueue(&myq,'j');
 
     y = dequeue(&myq);
     printf("Deleted element %c \n ", y ) ;
