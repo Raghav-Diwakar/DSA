@@ -71,7 +71,7 @@ int DelAft(struct node **p)
     return x;
 }
 /*************************************/
-DelEnd(struct node **START)
+int DelEnd(struct node **START)
 {
     struct node *p, *q;
     int x;
@@ -122,7 +122,7 @@ void EnQueue(struct node **START, int key)
     }
 }
 /*************************************/
-DeQueue(struct node **START)
+int DeQueue(struct node **START)
 {
     int x;
     x = DelBeg(&(*START));
