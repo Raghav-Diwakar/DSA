@@ -94,7 +94,7 @@ void Traverse(struct node *START)
     p = START;
     while (p != NULL)
     {
-        printf("%d-->", p->info);
+        printf("-->%d", p->info);
         p = p->Next;
     }
 }
@@ -141,13 +141,20 @@ int main()
     EnQueue(&START, 1);
     EnQueue(&START, 9);
     EnQueue(&START, 8) ;
+    InsBeg(&START , 99 );
+    InsAft(&START,10);
+    InsEnd(&START,100);
+    DelAft(&START);
+    DelBeg(&START);
+    DelEnd(&START);
+
     Traverse(START);
 
-    printf("\nDeleted information is:=> %d", DeQueue(&START));
-    printf("\nDeleted information is:=> %d", DeQueue(&START));
-    printf("\nDeleted information is:=> %d", DeQueue(&START));
-    printf("\nDeleted information is:=> %d\n", DeQueue(&START));
-    Traverse(START);
+    // printf("\nDeleted information is:=> %d", DeQueue(&START));
+    // printf("\nDeleted information is:=> %d", DeQueue(&START));
+    // printf("\nDeleted information is:=> %d", DeQueue(&START));
+    // printf("\nDeleted information is:=> %d\n", DeQueue(&START));
+    // Traverse(START);
 
     return 0;
 }
