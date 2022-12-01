@@ -127,20 +127,20 @@ int main()
   InsBeg(&START,200);
   InsBeg(&START,300);
   InsBeg(&START,400);
-  InsBeg(&START,500);
-  InsEnd(&START,900);
-  InsBeg(&START,600);
-  InsEnd(&START,700);
+  // InsBeg(&START,500);
+  // InsEnd(&START,900);
+  // InsBeg(&START,600);
+  // InsEnd(&START,700);
   //Traver(&START);
   //Traverse(&START);
   //cycledetect(&START);
   printf("\n\n");
   //middle(&START);
   
-  InsBeg(&START2,100);
-  InsBeg(&START2,200);
-  InsBeg(&START2,300);
-  InsBeg(&START2,400);
+  // InsBeg(&START2,100);
+  // InsBeg(&START2,200);
+  // InsBeg(&START2,300);
+  // InsBeg(&START2,400);
   InsBeg(&START3,500);
   InsBeg(&START3,900);
   InsBeg(&START3,600);
