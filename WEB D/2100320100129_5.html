@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <style>
+body {
+  background-color: rgb(59, 182, 239);
+}
+.clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #002560;
+  border-radius: 50%;
+  border: 10px solid white;
+  margin: 2em auto;
+}
+
+/* TIME */
+#twelve {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 49%;
+}
+#one {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 70%;
+  top: 4%;
+  transform: rotate(30deg);
+}
+#two {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 88%;
+  top: 22%;
+  transform: rotate(60deg);
+}
+#three {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 0.8em;
+  top: 45%;
+  transform: rotate(90deg);
+}
+#four {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 88%;
+  bottom: 22%;
+  transform: rotate(-60deg);
+}
+#five {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 70%;
+  bottom: 4%;
+  transform: rotate(-30deg);
+}
+#six {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 49%;
+  bottom: 0;
+}
+#seven {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 70%;
+  bottom: 4%;
+  transform: rotate(30deg);
+}
+#eight {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 88%;
+  bottom: 20%;
+  transform: rotate(60deg);
+}
+#nine {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 0.8em;
+  top: 45%;
+  transform: rotate(90deg);
+}
+#ten {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 88%;
+  top: 22%;
+  transform: rotate(-60deg);
+}
+#eleven {
+  width: 4px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 70%;
+  top: 4%;
+  transform: rotate(-30deg);
+}
+
+
+#middle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 47%;
+  z-index: 2;
+}
+#small {
+  width: 6px;
+  height: 50px;
+  background-color: #ffe3b5;
+  position: absolute;
+  top: 32%;
+  left: 55%;
+  transform: rotate(40deg);
+}
+#large {
+  width: 6px;
+  height: 100px;
+  background-color: #ffe3b5;
+  position: absolute;
+  top: 8%;
+  left: 49%;
+  transform: rotate(112deg);
+  transform-origin: 0 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="time">
+          <section id="one">
+          </section>
+          <section id="two">
+          </section>
+          <section id="three">
+          </section>
+          <section id="four">
+          </section>
+          <section id="five">
+          </section>
+          <section id="six">
+          </section>
+          <section id="seven">
+          </section>
+          <section id="eight">
+          </section>
+          <section id="nine">
+          </section>
+          <section id="ten">
+          </section>
+          <section id="eleven">
+          </section>
+          <section id="twelve">
+          </section>
+        </div> <!-- end class "time" -->
+        
+        <div class="pointer">
+          <section id="middle">
+          </section>   
+          <section id="small">
+          </section>
+          <section id="large">
+          </section>
+        </div> <!-- end class "pointer" -->
+      </div> <!-- end class "clock" -->
+</body>
+</html>
