@@ -46,7 +46,7 @@ int CountN0(struct node *T){
     }
 
 }
-CreateTree(struct node **T)
+void CreateTree(struct node **T)
 {
         int choice , x ;
         struct node *p ;

@@ -31,7 +31,6 @@ int count_N1_Nodes(struct Node *root)
     {
         return count_N1_Nodes(root->left) + count_N1_Nodes(root->right);
     }
-
     return count_N1_Nodes(root->left) + count_N1_Nodes(root->right) + 1;
 }
 void strictly(struct Node *root)
