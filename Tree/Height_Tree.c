@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 struct Node
 {
     char data;
@@ -15,28 +16,28 @@ struct Node *MakeNode(int x)
     p->right = NULL;
     return p;
 }
-int max(int num1, int num2)
-{
-    return (num1 > num2 ) ? num1 : num2;
-}
-int min(int num1, int num2) 
-{
-    return (num1 > num2 ) ? num2 : num1;
-}
-int height(struct Node *root)
-{
-    if (root == NULL)
-    {
-        return 0;
-    }
+// int max(int num1, int num2)
+// {
+//     return (num1 > num2 ) ? num1 : num2;
+// }
+// int min(int num1, int num2) 
+// {
+//     return (num1 > num2 ) ? num2 : num1;
+// }
+// int height(struct Node *root)
+// {
+//     if (root == NULL)
+//     {
+//         return 0;
+//     }
 
-    if (root->left == NULL && root->right == NULL)
-    {
-        return 0;
-    }
+//     if (root->left == NULL && root->right == NULL)
+//     {
+//         return 0;
+//     }
 
-    return max(height(root->left), height(root->right)) + 1;
-}
+//     return max(height(root->left), height(root->right)) + 1;
+// }
 int main()
 {
     struct Node *root = NULL;
