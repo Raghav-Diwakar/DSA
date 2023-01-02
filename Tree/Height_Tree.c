@@ -16,28 +16,30 @@ struct Node *MakeNode(int x)
     p->right = NULL;
     return p;
 }
-// int max(int num1, int num2)
-// {
-//     return (num1 > num2 ) ? num1 : num2;
-// }
-// int min(int num1, int num2) 
-// {
-//     return (num1 > num2 ) ? num2 : num1;
-// }
-// int height(struct Node *root)
-// {
-//     if (root == NULL)
-//     {
-//         return 0;
-//     }
+int max(int num1, int num2)
+{
+    return (num1 > num2 ) ? num1 : num2;
+}
 
-//     if (root->left == NULL && root->right == NULL)
-//     {
-//         return 0;
-//     }
+int min(int num1, int num2) 
+{
+    return (num1 > num2 ) ? num2 : num1;
+}
+int height(struct Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
 
-//     return max(height(root->left), height(root->right)) + 1;
-// }
+    if (root->left == NULL && root->right == NULL)
+    {
+        return 0;
+    }
+
+    return max(height(root->left), height(root->right)) + 1;
+}
+
 int main()
 {
     struct Node *root = NULL;
@@ -48,6 +50,6 @@ int main()
     root->right->right = MakeNode(5);
     root->right->left->left = MakeNode(6);
     root->right->left->left->right = MakeNode(7);
-    printf("Height of Tree is %d", height(root));
+    printf("Height of Tree is %d\n", height(root));
     return 0;
 }
