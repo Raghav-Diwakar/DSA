@@ -5,7 +5,6 @@ void DFSVisit(int i, vector<int> &visited, vector<int> &predcessor, vector<int> 
 {
     cout << i << " ";
     visited[i] = 1;
-
     for (int j = 0; j < AdjList[i].size(); j++)
     {
         if (visited[AdjList[i][j]] == 0)
@@ -20,14 +19,17 @@ void DFS(vector<int> AdjList[], int v)
 {
     vector<int> visited(v, 0);
     vector<int> predecessor(v, -1);
-
+    int count = 0 ;
     for (int i = 0; i < v; i++)
     {
         if (visited[i] == 0)
         {
+            count = count + 1 ;
+            
             DFSVisit(i, visited, predecessor, AdjList);
         }
     }
+    cout<<"No of connected components are "<<count ;
 }
 
 int main()
@@ -59,6 +61,6 @@ int main()
         cout << endl;
     }
     cout << endl;
-
+    
     DFS(AdjList, v);
 }
