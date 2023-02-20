@@ -87,5 +87,4 @@ int main (){
     InOrderTraversal(root);
     printf("\n Post order Traversal is :=>");
     PostOrderTraversal(root);
-    printf("counting of nodes %d",CountN0);
 }
